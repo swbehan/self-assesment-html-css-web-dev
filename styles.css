@@ -1,0 +1,142 @@
+html {
+    font-size: 15px;
+}
+
+section div {
+    display: flex;
+}
+
+.gallery {
+    width: fit-content;
+    margin: 0 auto;
+}
+
+section div span {
+    padding: 2px;
+    border: 2px solid black;
+    font-size: 30px;
+}
+
+section {
+    margin-bottom: 50px;
+}
+
+section div:nth-child(2) span:first-child.small-padding {
+    padding: 0px;
+}
+
+#padding-3px {
+    padding: 3px;
+}
+
+.padding-5px {
+    padding: 5px;
+}
+
+section div:nth-child(3) span:first-child.small-margin {
+    margin: 0px;
+}
+
+#margin-3px {
+    margin: 3px;
+}
+
+.margin-5px {
+    margin: 5px;
+}
+
+section div:nth-child(4) span:first-child.small-border {
+    border: 0px solid black;
+}
+
+#border-3px {
+    border: 3px solid black;
+}
+
+.border-5px {
+    border: 5px solid black;
+}
+
+/* removing default browser-applied gap*/
+body {
+    margin: 0;
+}
+
+header {
+    background-color: rgba(255, 255, 0, 0.5);
+    position: sticky;
+    top: 0;
+    border-bottom: 5px solid black;
+}
+
+.header-div-center {
+    margin: 0 auto;
+    width: 1000px;
+    text-align: center;
+    padding: 20px;
+    background-color: yellow;
+    border: 5px solid black;
+    border-bottom: 0px;
+    box-sizing: border-box;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 0;
+    margin: 0;
+}
+
+header ul li {
+    padding: 0 10px;
+    border: 5px solid black;
+    border-radius: 10px;
+}
+
+header ul li:hover {
+    color: gray;
+    text-decoration: underline wavy;
+    border: 2px solid black;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    background-color: black;
+    border: 5px solid grey;
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+
+section h2 + img {
+    position: static;
+    border: 5px dashed black;
+    display: block;
+    margin: 0 auto;
+}
+
+section h2 {
+    text-align: center;
+}
+
+.outer-relative-div {
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    background-color: black;
+    border: 2px solid gray;
+    color: white;
+}
+
+.inner-absolute-div {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: white;
+    border: 2px solid black;
+    color: black;
+    top: -20px;
+}
