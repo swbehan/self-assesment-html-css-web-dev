@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./styles.css" rel="stylesheet" />
+    <meta
+      name="description"
+      content="self assesment webpage which covers basics of HTML and css for Grad Web Dev Class"
+    />
+    <meta name="author" content="Sean Behan" />
+    <title>HTML+CSS Self Assesment</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-div-center">
+        <h1>Sean Behan Self Assesment</h1>
+        <p>
+          This header has a sticky position which keeps it in the normal
+          document flow but pins it to the top of the viewport once the user
+          scrolls past it. You would use this over fixed when you want the
+          element to maintain its natural width and not be taken out of the
+          document flow. Unlike fixed, at high scroll speeds sticky elements may
+          briefly lag before snapping back into position
+        </p>
+        <nav>
+          <ul>
+            <li>Hover Over Me!</li>
+            <li>Me As Well!</li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section>
+        <h2>PLEASE DONT SCROLL PAST ME! I'LL DISAPPEAR!</h2>
+        <img
+          src="images/sad-emoji.png"
+          alt="Sad emoji who is sad because the user will scroll him out of the view port and since he is static he will disappear."
+        />
+        <p>
+          The image above is in the static position which is the default
+          positioning for all HTML elements. It stays in the normal document
+          flow and scrolls with the page. You would use static when you want an
+          element to behave normally with no special positioning, like a content
+          image or a paragraph of text. He is sad because you will scroll past
+          him and he will be gone.
+        </p>
+      </section>
+      <section>
+        <h2>Absolute and Relative Positioning</h2>
+        <div class="outer-relative-div">
+          The 'New!' badge in the top right uses absolute positioning to pin itself to the
+          corner of its parent container. Absolute positioning takes the element
+          out of the normal document flow which means it can overlap other
+          elements. You would use this for things like notification badges,
+          tooltips, or sale tags on a product card.
+          <div class="inner-absolute-div">New!</div>
+        </div>
+      </section>
+      <section>
+        <h2>TIC TAC TOE SURPRISE</h2>
+        <div>
+          <span> X </span>
+          <span> O </span>
+          <span> O </span>
+        </div>
+        <div>
+          <span> O </span>
+          <span> X </span>
+          <span> O </span>
+        </div>
+        <div>
+          <span> X </span>
+          <span> X </span>
+          <span> O </span>
+        </div>
+        <p>I ALWAY win in Tic Tac Toe. Don't test me</p>
+      </section>
+      <section>
+        <h2>10 most useful tags for Sean in HTML</h2>
+        <ul>
+          <li>p tag because sean loves to talk!</li>
+          <li>
+            span tag because its inline by default and its a smaller container!
+          </li>
+          <li>img tag so we can show pictures to people!</li>
+          <li>body tag since all visible content goes in it!</li>
+          <li>ul and li for creating lists</li>
+          <li>a for creating links to other pages and sites</li>
+          <li>the script tag for linking our javascript files!</li>
+          <li>section and article for more specific containers</li>
+          <li>div for more general/broad containers</li>
+          <li>button for... creating buttons</li>
+        </ul>
+      </section>
+      <section>
+        <h2>Most important header tags for SEO</h2>
+        <ul>
+          <li>
+            the &lt;title&gt; tag which is the clickable headline in google
+            search results
+          </li>
+          <li>
+            the &lt;meta name="description"&gt; tag which is the summary shown
+            under the title
+          </li>
+          <li>
+            the &lt;h1&gt; through &lt;h6&gt; tags help search engines
+            understand hierarchy
+          </li>
+          <li>
+            the alt attributes on images describes images to search engines
+          </li>
+          <li>
+            semantic elements like &lt;nav&gt; and &lt;header&gt; help search
+            engines understand structure
+          </li>
+        </ul>
+      </section>
+      <section class="gallery">
+        <h2>Gallery for Box Model Options!</h2>
+        <div>
+          <span class="small-padding">Padding w/ 0px</span>
+          <span id="padding-3px">Padding w/ 3px</span>
+          <span class="padding-5px">Padding w/ 5px</span>
+        </div>
+        <div>
+          <span class="small-margin">Margin w/ 0px</span>
+          <span id="margin-3px">Margin w/ 3px</span>
+          <span class="margin-5px">Margin w/ 5px</span>
+        </div>
+        <div>
+          <span class="small-border">Border w/ 0px</span>
+          <span id="border-3px">Border w/ 3px</span>
+          <span class="border-5px">Border w/ 5px</span>
+        </div>
+      </section>
+      <section>
+        <h2>Font Styling Varients and Inline Styling</h2>
+        <ul>
+          <li style="font-size: 12px">
+            <u>Cool Website</u> — px is an absolute size used when you need a
+            fixed size that never changes, like a border or icon
+          </li>
+          <li style="font-size: 16pt">
+            <u>Cool Website</u> — pt is an absolute size (1/72 of an inch) used
+            for print layouts like a resume where you need precise physical
+            sizing
+          </li>
+          <li style="font-size: 1em">
+            <u>Cool Website</u> - em is a relative size based on the parent
+            element's font size. It's useful for components that should scale
+            with their container, like button text that should grow if the
+            surrounding text grows.
+          </li>
+          <li style="font-size: 2vh">
+            <u>Cool Website</u> - vh is a relative size based on the viewport
+            height (2% of the browsers height in this example). Useful for text
+            that should scale with the screen size, like a title on a landing
+            page where you want the text to always be proportional to how tall
+            the browser window is.
+          </li>
+          <li style="font-size: 1rem">
+            <u>Cool Website</u> - rem is a relative unit based on the root html font size.
+            Useful when you want all text on the page to scale consistently when
+            you change one base font size.
+          </li>
+          <li style="font-size: 150%">
+            <u>Cool Website</u> - % is a relative unit based on the parent
+            element's font size. Useful when you want text inside a component to
+            be proportionally larger than its container, like a heading that
+            should always be 150% the size of the surrounding text.
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer>
+      <div>
+        This is a fixed element that will stay pinned to the bottom of the
+        viewport regardless of where the user scrolls. By default the width of
+        this container will shrink. You would use fixed positioning for things
+        like a persistent chat button, a cookie banner, or a footer that should
+        always be visible.
+      </div>
+    </footer>
+  </body>
+</html>
